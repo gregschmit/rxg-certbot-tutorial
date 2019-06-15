@@ -41,7 +41,10 @@ We need to install the `certbot-dns-cloudflare` plugin, and we're using Python2/
 1. Run `certbot`:
 
 ```
-$ certbot certonly --dns-cloudflare --dns-cloudflare-credentials ~/certbot.cred --dns-cloudflare-propagation-seconds 60 -d rxg.schmit.io
+$ certbot certonly --dns-cloudflare \
+    --dns-cloudflare-credentials ~/certbot.cred
+    --dns-cloudflare-propagation-seconds 60
+    -d rxg.schmit.io
 ```
 
 2. You will need to enter an admin email address (I recommend your CloudFlare email), agree to their Terms of Service, and you may see additional prompts; follow them and provide sane responses.
