@@ -42,8 +42,8 @@ We need to install the `certbot-dns-cloudflare` plugin, and we're using Python2/
 
 ```
 $ certbot certonly --dns-cloudflare \
-    --dns-cloudflare-credentials ~/certbot.cred
-    --dns-cloudflare-propagation-seconds 60
+    --dns-cloudflare-credentials ~/certbot.cred \
+    --dns-cloudflare-propagation-seconds 60 \
     -d rxg.schmit.io
 ```
 
